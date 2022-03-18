@@ -1,0 +1,16 @@
+{
+  "name": "cloudflareddns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "miguelfiguereo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon miguelfiguereo.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}
