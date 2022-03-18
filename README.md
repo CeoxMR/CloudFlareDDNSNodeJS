@@ -1,2 +1,6 @@
 # CloudFlareDDNSNodeJS
-This is just an script that runs on node that helps to automatically update a DNS A record of an specific domain to the public IP. 
+This is just a script on node that grabs our dynamic public IP and updates a domain DNS A record in cloudflare automatically.
+
+I have this setup on a linux env, using a cron job to run it every 5 minutes.
+
+*/5 * * * * node /yourFilesDirectory/domain.js
