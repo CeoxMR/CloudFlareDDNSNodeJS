@@ -2,10 +2,9 @@
   "name": "cloudflareddns",
   "version": "1.0.0",
   "description": "",
-  "main": "miguelfiguereo.js",
+  "main": "domain.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon miguelfiguereo.js"
+    "start": "node domain.js",
   },
   "keywords": [],
   "author": "",
