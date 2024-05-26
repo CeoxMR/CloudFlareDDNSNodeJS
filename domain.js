@@ -41,6 +41,14 @@ getDate();
     }
     console.log('>> Your current public IP is: ', ip);
 
+    // Validating if there has been an IP change since the last run
+    if (process.env.CFDNS_LAST_IP == ip) {
+        console.log('>> The IP address hasn not changed since the last run, your current IP is: ', process.env.CFDNS_LAST_IP)
+        process.exit();
+    }
+    // Updating the env variable with the current public IP
+    process.env.CFDNS_LAST_IP = ip
+
     // Setting proper authentication method.
     if (method === 'global') {
         authHeader = 'X-Auth-Key';
